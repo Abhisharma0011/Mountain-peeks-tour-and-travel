@@ -1,0 +1,706 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px)
+/* CSS Variables */
+
+:root {
+    --navbar-height: 59px;
+}
+
+
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 59px;
+    margin: 3px 6px;
+}
+
+/* Navigation Bar: insta logo */
+#insta {
+    margin: 10px 34px;
+}
+
+#insta img {
+    height: 59px;
+    margin: 3px 6px;
+}
+
+.insta-img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Bree Serif', serif;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#Home {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 100px;
+    height: 550%;
+    justify-content: center;
+    align-items: center;
+    float: left;
+
+}
+
+#Home::before {
+    content: "";
+    background: url(../img/pexels-jaime-reimer-2662116.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 642px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+.dsp-1 {
+    margin: 12px;
+    background-color: red;
+    font-size: 38px;
+    font-weight: bolder;
+    /* font-family: 'Bree Serif', serif; */
+}
+
+.dsp-2 {
+    margin: 12px;
+    background-color: yellow;
+    font-size: 16px;
+    /* font-family: 'Bree Serif', serif; */
+}
+
+.dsp-3 {
+    margin: 12px;
+    background-color: red;
+    font-size: 38px;
+    font-weight: bolder;
+    /* font-family: 'Bree Serif', serif; */
+}
+
+/* "Submit Form" ...work begains! */
+
+/* #Form01{
+display: flex;
+flex-direction: column;
+padding: 100px 100px;
+height: 550%;
+justify-content: center;
+align-items: center;
+
+}
+
+  .divform01{
+  font-size: medium;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: bolder;
+  margin-bottom: 5px;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .divform02{
+
+   font-size: medium;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: bolder;
+  margin-bottom: 5px;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .divform03{
+   font-size: medium;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: bolder;
+  margin-bottom: 5px;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .divform04{
+  font-size: medium;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: bolder;
+  margin-bottom: 5px;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .divform06{
+   font-size: medium;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: bolder;
+  margin-bottom: 5px;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: row;
+
+  }
+  .divform07 :hover{
+    background-color: wheat;
+    text-decoration-color: yellow;
+  
+    
+  }
+
+.Somthingarea{
+    width: 270px;
+    padding: 14px 36px;
+    margin: 14px -8px;
+
+
+  }
+  .submitbutton{
+
+  } */
+/* Contact Section */
+.form-msg {
+    height: 122px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 45%;
+    z-index: -1;
+    opacity: 0.7
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 70%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 24px;
+    font-family: 'Bree Serif', serif;
+
+}
+
+.divform07 input {
+    cursor: pointer;
+    font-family: 'Bree Serif', serif;
+    background-color: red;
+    border-radius: 15px;
+    height: 50px;
+    color: white
+}
+
+.divform07 input :hover {
+    color: black;
+    background-color: white
+}
+
+.h-primary {
+    background-color: yellow;
+    margin: 2px 173px;
+    opacity: .5;
+    font-weight: bolder;
+    font-family: 'Bree Serif', serif;
+}
+
+#midline {
+    text-align: center !important;
+    font-family: 'Bree Serif', serif;
+    font-weight: bolder;
+    background-color: blueviolet;
+}
+
+
+
+.packages-list {
+    background: linear-gradient(#9e839678, #160433bd), url(img/avenue-815297_1280.jpg);
+    background-attachment: fixed;
+}
+
+.p-4 {
+    padding: 1.5rem !important;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0e0402;
+    background-color: #ffffff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+.col-sm-4 img {
+    height: 300px;
+    width: 500px;
+    margin: 46px;
+    border-radius: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: auto;
+    border: 2px solid lightblue;
+}
+
+/* .col-sm-4 p {
+
+    display: flex;
+    flex-direction:
+} */
+
+.bottomline {
+    text-align: center !important;
+    font-family: 'Bree Serif', serif;
+    font-size: xx-large;
+    font-style: oblique;
+    color: #850f0fc7;
+
+}
+
+.aboutuslast {
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.aboutuslast strong {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    font-size: x-large;
+    color: #0d6efd;
+}
+
+.aboutuslast-p {
+    font-family: 'Bree Serif', serif;
+    color: brown;
+}
+
+.who-we-are {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    font-size: x-large;
+    color: #0d6efd;
+}
+
+.aboutuslast-01 {
+    font-family: 'Bree Serif', serif;
+    color: brown;
+}
+
+.aboutuslast-01 strong {
+    color: black;
+}
+
+.whyussection {
+    text-align: center !important;
+    font-family: 'Bree Serif', serif;
+    font-weight: bolder;
+    font-size: 56px;
+    color: #0d6efd;
+}
+
+.mt-4 {
+    text-align: center !important;
+    color: blue;
+}
+
+.img-fluid {
+    vertical-align: middle;
+    height: 78px;
+
+
+}
+
+.popular-img-cn {
+    vertical-align: middle;
+    text-align: right;
+
+}
+
+.whyus-img {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button-default {
+    cursor: pointer;
+    background-color: red;
+    border-radius: 15px;
+    height: 50px;
+    color: white
+}
+
+.button-default ::hover {
+
+    color: darkred;
+    background-color: #05c305;
+}
+
+/* New floating get querry section */
+
+.modal-header {
+    background-color: #ffd200;
+}
+
+.modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+    width: 173px;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 13%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 0.3rem;
+    outline: 0;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+    pointer-events: none;
+}
+
+/* popular items list css */
+
+.popular-highlights {
+
+    align-items: center;
+    font-size: larger;
+    font-weight: bolder;
+    color: yellow;
+    padding-left: 565px;
+    background-color: red;
+}
+
+.popular-para {
+    font-size: larger;
+    font-weight: bolder;
+    color: #05c305;
+    background-color: #6610f2;
+}
+
+.popular-headings-h4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    font-weight: bolder;
+    color: #d3d30a;
+    background-color: black;
+}
+
+.popular-headings-h5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    font-weight: bolder;
+    color: #d3d30a;
+    background-color: black;
+}
+
+/* We also arrange Tour Packages from Agra, Chandigarh, Delhi, Jaipur & More... */
+
+.dsp-4 {
+    display: flex;
+    justify-content: center;
+    background-color: #05c305;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: blue
+}
+
+.Centeralign-footer {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: lighter;
+    font-family: 'Bree Serif', serif;
+}
+
+.Centeralign-footer-2 {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: lighter;
+    color: #0d6efd;
+    background-color: pink
+}
+
+.web-footer {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    color: #0dcaf0;
+    font-weight: lighter;
+    font-size: larger;
+    font-family: 'Bree Serif', serif;
+}
+
+.copyright-footer {
+    display: flex;
+    justify-content: center;
+    background-color: #05c305;
+    font-family: 'Bree Serif', serif;
+}
+
+/* contact us setction web footer  */
+
+.contact-us-img {
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.contact-us-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    background-color: #cb5454;
+    ;
+    font-size: x-large;
+
+}
+
+.contact-us-paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    font-family: 'Bree Serif', serif;
+    color: #0d6efd;
+
+}
+
+
+/* 2nd section of contact us  */
+
+
+.contact-us-phone-img {
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.contact-us-phone-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    background-color: #cb5454;
+    ;
+    font-size: x-large;
+}
+
+.contact-us-phone-para {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    font-family: 'Bree Serif', serif;
+    color: #0d6efd;
+}
+
+/* 3rd section of contact us  */
+
+
+.contact-us-email-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    height: 150px;
+    width: 150px;
+    background-color: black;
+}
+
+.contact-us-email-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    background-color: #cb5454;
+    ;
+    font-size: x-large;
+}
+
+.contact-us-email-para {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    font-family: 'Bree Serif', serif;
+    color: #0d6efd;
+} 
